@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateFacultyStatus", "UpdateFacultyStatus.csproj", "{0CFDBAC5-6565-4408-B26B-1E31815BA3CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpdateFacultyStatus", "UpdateFacultyStatus.csproj", "{0CFDBAC5-6565-4408-B26B-1E31815BA3CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

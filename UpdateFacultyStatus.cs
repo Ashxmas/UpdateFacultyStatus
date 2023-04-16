@@ -10,14 +10,15 @@ using Newtonsoft.Json.Linq;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Cosmos.Fluent;
-
+using Microsoft.Azure.WebJobs;
 
 namespace UpdateFacultyStatus
 {
     public static class UpdateFacultyStatus
     {
         public static CosmosClient cosmosClient;
-        public static IConfiguration configuration;
+        public static IConfiguration config;
+        private const int MAX_IDLE_TIME_SECONDS = 60;
 
         [Function("UpdateFacultyStatus")]
         public static async Task<HttpResponseData> Run(
